@@ -15,7 +15,7 @@ Repo contents:
     - **database** - Folder containing- SQL to create relational SQL Server table used and populate with initial data.
     - **Controllers** - Folder containing controller to handle HTTP requests
     - **Models** - Folder containing components related to application data used by server
-<br/>    
+  
 - **TaskManager-Vue-Front-End** - Vue.js client front-end
   - **public** - Components available through browser
   - **src** - Vue application code
