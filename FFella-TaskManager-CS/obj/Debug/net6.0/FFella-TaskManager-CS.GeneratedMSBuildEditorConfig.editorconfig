@@ -16,14 +16,6 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\frank\GitHubRepos\FFella-Task-Manager-Web-App-CS\FFella-TaskManager-CS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/frank/GitHubRepos/FFella-Task-Manager-Web-App-CS/FFella-TaskManager-CS/Views/HomeController2/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZUNvbnRyb2xsZXIyXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/frank/GitHubRepos/FFella-Task-Manager-Web-App-CS/FFella-TaskManager-CS/Views/HomeController2/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZUNvbnRyb2xsZXIyXFByaXZhY3kuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/frank/GitHubRepos/FFella-Task-Manager-Web-App-CS/FFella-TaskManager-CS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

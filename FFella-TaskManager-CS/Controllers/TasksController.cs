@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FFella_TaskManager_CS.Models;
-using System.Net;
 using Task = FFella_TaskManager_CS.Models.Task;
 
 namespace FFella_TaskManager_CS.Controllers
@@ -25,14 +20,14 @@ namespace FFella_TaskManager_CS.Controllers
         // GET: tasks
         [HttpGet("tasks"), ActionName("Index")]
         //public async ToDoItem<IActionResult> Index()
-        public async Task<List<FFella_TaskManager_CS.Models.Task>> IndexAsync()
+        public async Task<List<Models.Task>> IndexAsync()
         {
             return await _context.Tasks.ToListAsync();
         }
 
         // GET: Tasks/5
         [HttpGet("tasks/{id}")]
-        public async Task<FFella_TaskManager_CS.Models.Task> TaskDetailsAsync(int? id)
+        public async Task<Models.Task> TaskDetailsAsync(int? id)
         {
             var toDoItem = await _context.Tasks
                 .FirstOrDefaultAsync(m => m.TaskId == id);
@@ -43,15 +38,15 @@ namespace FFella_TaskManager_CS.Controllers
 
         // POST: tasks/create
         [HttpPost("tasks/create")]
-        public async Task<FFella_TaskManager_CS.Models.Task> Create(
+        public async Task<Models.Task> Create(
             [Bind("TaskId,DueDate,Description,Iscomplete")] Models.Task toDoItem)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(toDoItem);
                 await _context.SaveChangesAsync();
+
                 return toDoItem;
-                //return RedirectToAction(nameof(IndexAsync));
             }
 
             return toDoItem;
@@ -94,11 +89,8 @@ namespace FFella_TaskManager_CS.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<int>> DeleteConfirmedAsync(int id)
         {
-            if (_context.Tasks == null)
-            {
-                return Problem("Entity set 'TasksDbContext.ToDoItem'  is null.");
-            }
             var task = await _context.Tasks.FindAsync(id);
+
             if (task != null)
             {
                 _context.Tasks.Remove(task);
