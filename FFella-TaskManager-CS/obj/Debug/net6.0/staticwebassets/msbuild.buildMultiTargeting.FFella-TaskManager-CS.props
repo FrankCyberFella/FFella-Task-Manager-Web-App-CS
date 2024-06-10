@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FFella-TaskManager-CS.props" />
+</Project>
