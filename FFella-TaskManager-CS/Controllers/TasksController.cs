@@ -57,33 +57,10 @@ namespace FFella_TaskManager_CS.Controllers
             return toDoItem;
         }
 
-/********************************************************************************
-        // GET: Tasks/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null || _context.Tasks == null)
-            {
-                return NotFound();
-            }
-
-            var task = await _context.Tasks.FindAsync(id);
-            if (task == null)
-            {
-                return NotFound();
-            }
-            return View(task);
-        }
-*****************************************************************************************************/
-        // PUT: Tasks/Update/5
+        // PUT: Tasks/Update
         [HttpPut("tasks/update")]
         public async Task<IActionResult> Edit([Bind("TaskId,DueDate,Description,Iscomplete")] Task toDoItem)
         {
-            /*************************************
-            if (id != toDoItem.TaskId)
-            {
-                return NotFound();
-            }
-            ****************************************/
             if (ModelState.IsValid)
             {
                 try
@@ -112,28 +89,9 @@ namespace FFella_TaskManager_CS.Controllers
             throw new NotImplementedException();
         }
 
-        // GET: Tasks/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null || _context.Tasks == null)
-            {
-                return NotFound();
-            }
-
-            var task = await _context.Tasks
-                .FirstOrDefaultAsync(m => m.TaskId == id);
-            if (task == null)
-            {
-                return NotFound();
-            }
-
-            return View(task);
-        }
-
         // DELETE: Tasks/Delete/5
         [HttpDelete("tasks/delete/{id}"), ActionName("Delete")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        //[ValidateAntiForgeryToken]
         public async Task<ActionResult<int>> DeleteConfirmedAsync(int id)
         {
             if (_context.Tasks == null)

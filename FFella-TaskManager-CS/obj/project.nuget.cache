@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NUxhha4gHe6ej2oz84TsGU6npqCFgSGBQGD4G1Ryp6taV0DyYIietw/txM6RzhhP0dE6gREsTS759/pWsozwZw==",
+  "dgSpecHash": "aT4FeHns6vbv2wnsaFKFbYNEhvc6QCpI02BCtKg7WSQXSRe1/Gqm869MpkXJYwr+H9cAm1C1XJhyHkVzJZAQew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\frank\\source\\repos\\FFella-TaskManager-CS\\FFella-TaskManager-CS.csproj",
+  "projectFilePath": "C:\\Users\\frank\\GitHubRepos\\FFella-Task-Manager-Web-App-CS\\FFella-TaskManager-CS\\FFella-TaskManager-CS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\frank\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\frank\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
