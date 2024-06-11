@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\frank\\GitHubRepos\\FFella-Task-Manager-Web-App-CS\\FFella-TaskManager-CS\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FFella-TaskManager-CS.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FFella-TaskManager-CS.bundle.scp.css"
-    },
-    {
       "Id": "C:\\Users\\frank\\GitHubRepos\\FFella-Task-Manager-Web-App-CS\\FFella-TaskManager-CS\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

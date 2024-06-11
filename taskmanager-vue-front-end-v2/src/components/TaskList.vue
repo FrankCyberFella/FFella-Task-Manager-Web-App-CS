@@ -195,7 +195,7 @@
       filteredTasks() {
         if(this.$store.state.tasks.length == 0) return;
         let  filteredResult =  this.$store.state.tasks.filter((task) => {
-                                                             return task.description.includes(this.descriptionFilterText);
+                                                             return task.description.toLowerCase().includes(this.descriptionFilterText.toLowerCase());
                                                            });
         filteredResult =  filteredResult.filter((task) => {
                                                              return task.duedate.includes(this.duedateFilterText);

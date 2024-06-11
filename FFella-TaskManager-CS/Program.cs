@@ -33,6 +33,9 @@ var app = builder.Build();
 // Authorize app to access secure resources
 // app.UseAuthorization();  // Authorization is not used in this app
 
+// Enable server to use Cross-Origin-Resource-Sharing for filtering domains able to access services on server
+app.UseCors();
+
 // Have URL paths defined for controller methods mapped in the server
 app.MapControllers();
 
